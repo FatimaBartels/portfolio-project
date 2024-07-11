@@ -23,19 +23,40 @@ h6 {
 h1 {
   font-size: 96px;
 }
+
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
 }
+
 a {
   text-decoration: none;
   color: var(--secondary-color);
-  padding: 10px 20px;
-  border-radius: 50px;
+}
+/*underline style */
+a {
+  display: inline-block;
+  position: relative;
+  padding: 0.2em 0;
 }
 
-a:hover {
-  text-decoration: underline;
+a::after {
+  content: "";
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  height: 0.1em;
+  background-color: var(--primary-color);
+  transition: opacity 400ms, transform 400ms;
+}
+
+a:hover::after,
+a:focus::after {
+  transform: scale(1);
 }
 
 a span {
