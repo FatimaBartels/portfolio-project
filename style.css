@@ -1,4 +1,7 @@
 :root {
+  --branding-color: teal;
+  --primary-color: rgba(94, 234, 212, 1);
+  --secondary-color: #193756;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -24,6 +27,26 @@ p {
   font-family: var(--default-font-family);
   font-weight: normal;
 }
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a span {
+  display: inline-block;
+  transform: translateX(20%);
+  transition: 1s ease-in-out;
+}
+
+a span:hover {
+  transform: translateX(70%);
+}
 
 .hero {
   background: rgb(231, 228, 228);
@@ -35,7 +58,6 @@ p {
   font-size: 36px;
   font-family: bold;
   margin: 0;
-  color: #272742;
 }
 
 .hero h2 {
