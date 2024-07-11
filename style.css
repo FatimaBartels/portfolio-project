@@ -48,7 +48,7 @@ a::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 85%;
+  width: 88%;
   height: 0.1em;
   background-color: var(--primary-color);
   transition: opacity 400ms, transform 400ms;
