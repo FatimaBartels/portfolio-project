@@ -85,14 +85,14 @@ a span:hover {
 
 .intro {
   color: var(--secondary-color);
-  font-size: 36px;
-  font-family: bold;
+  font-size: 34px;
+  font-family: var(--default-font-family);
   margin: 0;
 }
 
 .hero h2 {
-  font-family: var(--default-font-family);
-  font-size: 24px;
+  font-family: var(--heading-font-family);
+  font-size: 30px;
   line-height: 2;
   font-weight: normal;
 }
@@ -115,12 +115,12 @@ a span:hover {
 
   .hero h2 {
     line-height: 1;
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .intro {
-    font-size: 28px;
-    font-family: bold;
+    font-size: 26px;
+    font-family: var(--default-font-family);
   }
   .project-description {
     padding: 0;
