@@ -110,6 +110,9 @@ a span:hover {
   h2 {
     font-size: 40px;
   }
+  h3 {
+    text-align: center;
+  }
 
   .hero {
     padding: 80px 20px;
