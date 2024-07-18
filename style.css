@@ -105,15 +105,19 @@ nav {
   background: var(--hero-bg-color);
 }
 
+navbar-nav {
+  display: flex;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
 }
 
-nav li {
-  display: inline;
+nav .nav-item {
+  display: inline-flex;
   list-style: none;
-  line-height: 40px;
+  line-height: 15px;
 }
 
 @media (max-width: 960px) {
