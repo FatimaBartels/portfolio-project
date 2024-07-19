@@ -29,39 +29,23 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg d-flex">
-      <div class="container pt-3">
-        <a class="navbar-brand" href="/">Fatima Bartels</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul
-            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px"
-          >
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/work.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="/">Fatima Bartels</a></div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links pt-3">
+          <label for="close-btn" class="btn close-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/work.html">Projects</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
       </div>
     </nav>
 
@@ -148,6 +132,23 @@
         >Let's Continue To My Project
         <span><i class="fa-solid fa-arrow-right-long"></i></span
       ></a>
+    </div>
+    <footer>
+    <div class="container footer-container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="social-media-section">
+                    <li class="social-media-icon"><a href="https://github.com/FatimaBartels"><i class="fa-brands fa-square-github"></i></a></li>
+                    <li class="social-media-icon"><a href="https://www.linkedin.com/in/fatimabartels/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="social-media-icon"><a href="https://www.instagram.com/codewithmamita/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                   <li class="social-media-icon"><a href="mailto:bartels.fatima@gmail.com"><i class="fa-solid fa-at"></i></a></li> 
+                </ul>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <p class="footer-text">This website is made with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>    
+      </footer>
     </div>
   </body>
 </html>
