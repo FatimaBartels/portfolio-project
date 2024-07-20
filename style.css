@@ -147,6 +147,14 @@ a span:hover {
   .content {
     margin: 0;
   }
+
+  .footer-section p {
+    justify-content: center;
+  }
+
+  .footer-section .social-media-section {
+    justify-content: center;
+  }
 }
 
 .weather-img {
@@ -290,7 +298,7 @@ footer {
   margin-top: 80px;
 }
 
-.footer-container {
+.footer-section {
   padding-top: 20px;
 }
 
@@ -312,6 +320,8 @@ footer {
 }
 
 .footer-text {
+  display: flex;
+  justify-content: end;
   color: var(--secondary-color);
   font-size: 14px;
   margin-top: 10px;
