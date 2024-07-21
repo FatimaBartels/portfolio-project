@@ -80,7 +80,7 @@ a span:hover {
 .hero {
   background: var(--hero-bg-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 90px 20px;
 }
 
 .intro {
@@ -115,7 +115,7 @@ a span:hover {
   }
 
   .hero {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
 
   .hero h2 {
