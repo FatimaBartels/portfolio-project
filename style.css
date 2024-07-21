@@ -1,5 +1,5 @@
 :root {
-  --branding-color: teal;
+  --branding-color: rgba(0, 128, 128, 0.368);
   --primary-color: rgba(94, 234, 212, 1);
   --secondary-color: #193756;
   --heading-font-family: "Playfair Display", serif;
@@ -105,10 +105,11 @@ span.language-used {
   padding: 10px 15px;
   border-radius: 50px;
   font-size: 14px;
-  margin: 5px;
+  margin: 3px;
   font-weight: 500;
-  background-color: #5197dd57;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  opacity: 0.9;
 }
 
 @media (max-width: 960px) {
