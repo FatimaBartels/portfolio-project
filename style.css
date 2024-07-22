@@ -131,6 +131,14 @@ span.language-used {
   width: 50px;
 }
 
+.skills-icon {
+  list-style-type: none;
+}
+
+.icon {
+  max-width: 50%;
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 60px;
