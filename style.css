@@ -127,6 +127,10 @@ span.language-used {
   background-color: var(--hero-bg-color);
 }
 
+.weblogo {
+  width: 50px;
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 60px;
