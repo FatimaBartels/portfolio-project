@@ -131,12 +131,8 @@ span.language-used {
   width: 50px;
 }
 
-.skills-icon {
-  list-style-type: none;
-}
-
 .icon {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 @media (max-width: 960px) {
@@ -194,6 +190,10 @@ span.language-used {
 
   .content {
     margin: 0;
+  }
+
+  .icon {
+    width: 30%;
   }
 
   a.link-to {
