@@ -135,6 +135,16 @@ span.language-used {
   max-width: 100%;
 }
 
+.contact-details {
+  padding: 80px;
+}
+
+.contact-text {
+  margin-top: 80px;
+  font-size: 22px;
+  color: var(--secondary-color);
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 60px;
@@ -193,7 +203,8 @@ span.language-used {
   }
 
   .icon {
-    width: 30%;
+    width: 15%;
+    justify-content: center;
   }
 
   a.link-to {
@@ -206,6 +217,26 @@ span.language-used {
 
   .footer-section .social-media-section {
     justify-content: center;
+  }
+
+  .experience-section h2 {
+    text-align: center;
+  }
+
+  .skills-icon {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .link-to-page {
+    text-align: center;
+  }
+
+  .contact-text {
+    margin-top: 20px;
+  }
+
+  .contact-details {
+    padding: 0;
   }
 }
 
@@ -387,4 +418,17 @@ footer {
   font-size: 14px;
   margin-top: 10px;
   opacity: 0.9;
+}
+
+.top-btn {
+  all: unset;
+  font-size: 1.5rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transform: scale(1.8);
+  opacity: 0;
+  transition: 0.3s;
 }
