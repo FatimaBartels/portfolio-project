@@ -1,10 +1,13 @@
 :root {
-  --branding-color: rgba(0, 128, 128, 0.368);
-  --primary-color: rgba(94, 234, 212, 1);
+  --other-color: rgba(0, 128, 128, 0.368);
+  --primary-color: #5eead4;
   --secondary-color: #193756;
+  --branding-color: rgb(239, 248, 248);
+  --dark-theme-color: #030e1b;
+  --dark-second-color: #08172a;
+  --dark-font-color: #f0f8ff;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  --hero-bg-color: rgb(239, 248, 248);
 }
 
 body {
@@ -41,7 +44,8 @@ a {
   text-decoration: none;
   color: var(--secondary-color);
 }
-/*underline style */
+
+/*Links underline style */
 a {
   display: inline-block;
   position: relative;
@@ -77,8 +81,10 @@ a span:hover {
   transform: translateX(70%);
 }
 
+/*underline style ends here*/
+
 .hero {
-  background: var(--hero-bg-color);
+  background: var(--branding-color);
   text-align: center;
   padding: 90px 20px;
 }
@@ -124,7 +130,7 @@ span.language-used {
 .app-row:hover {
   padding: 25px;
   border-radius: 5px;
-  background-color: var(--hero-bg-color);
+  background-color: var(--branding-color);
 }
 
 .weblogo {
@@ -144,6 +150,8 @@ span.language-used {
   font-size: 22px;
   color: var(--secondary-color);
 }
+
+/*RESPONSIVE FOR TAB & MOBILE VIEW*/
 
 @media (max-width: 960px) {
   h1 {
@@ -239,6 +247,7 @@ span.language-used {
     padding: 0;
   }
 }
+/*RESPONSIVE ends here*/
 
 .weather-img {
   box-shadow: -1px -1px 22px -2px rgba(224, 235, 235, 0.77);
@@ -279,7 +288,7 @@ nav {
   position: sticky;
   z-index: 99;
   width: 100%;
-  background: var(--hero-bg-color);
+  background: var(--branding-color);
 }
 nav .wrapper {
   position: relative;
@@ -329,6 +338,7 @@ nav .wrapper {
   top: 10px;
 }
 
+/*Navigation Responsive*/
 @media screen and (max-width: 970px) {
   .wrapper .btn {
     display: block;
@@ -340,7 +350,7 @@ nav .wrapper {
     max-width: 250px;
     top: 0;
     left: -100%;
-    background: var(--hero-bg-color);
+    background: var(--branding-color);
     display: block;
     padding: 50px 10px;
     line-height: 35px;
@@ -356,7 +366,7 @@ nav .wrapper {
     background: var(--secondary-color);
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--hero-bg-color);
+    background: var(--branding-color);
   }
 
   #menu-btn:checked ~ .nav-links {
@@ -386,7 +396,7 @@ nav input {
 /*navigation ends here*/
 
 footer {
-  background-color: var(--hero-bg-color);
+  background-color: var(--branding-color);
   margin-top: 80px;
 }
 
@@ -420,6 +430,7 @@ footer {
   opacity: 0.9;
 }
 
+/*Scroll to top button*/
 .top-btn {
   all: unset;
   font-size: 1.5rem;
@@ -431,4 +442,113 @@ footer {
   transform: scale(1.8);
   opacity: 0;
   transition: 0.3s;
+}
+
+/*SWITCH BTN FOR DARK THEME*/
+
+.switch {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 20px;
+  margin: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(152, 179, 179);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: " ";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--branding-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:hover {
+  background: var(--secondary-color);
+}
+
+input:checked + .slider {
+  background-color: var(--secondary-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*DARK THEME*/
+.dark {
+  background: var(--dark-theme-color);
+  color: var(--branding-color);
+}
+.dark .hero {
+  background: var(--dark-second-color);
+  color: var(--branding-color);
+}
+
+.dark a,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark .text-center,
+.dark .intro,
+.dark .contact-text,
+.dark .fa-brands,
+.dark .fa-solid,
+.dark .text-muted span,
+.dark .footer-text {
+  color: var(--branding-color);
+}
+
+.dark footer,
+.dark nav {
+  background-color: var(--dark-second-color);
+  color: var(--branding-color);
+}
+
+.dark .nav-links li a {
+  color: var(--branding-color);
+}
+
+.dark .slider {
+  height: 20px;
+  transition: all 200ms ease-in-out;
+}
+.dark .slider:hover {
+  background: rgb(152, 179, 179);
 }
