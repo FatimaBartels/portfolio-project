@@ -25,12 +25,20 @@ h6 {
   color: var(--secondary-color);
 }
 
-h1 {
-  font-size: 96px;
+.hero h1 {
+  font-size: 86px;
+  text-align: left;
 }
 
-h2 {
-  font-size: 54px;
+.hero-subtitle {
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+
+.hero-paragraph {
+  text-align: left;
 }
 
 p {
@@ -40,6 +48,9 @@ p {
   line-height: 30px;
 }
 
+.workwithme {
+  text-align: left;
+}
 a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -93,21 +104,28 @@ a span:hover {
 .hero {
   background: var(--branding-color);
   text-align: center;
-  padding: 90px 20px;
+  padding: 80px 20px;
 }
 
-.intro {
+.hero .intro {
   color: var(--secondary-color);
-  font-size: 34px;
+  font-size: 28px;
+  text-align: left;
   font-family: var(--default-font-family);
   margin: 0;
 }
 
 .hero h2 {
   font-family: var(--heading-font-family);
-  font-size: 30px;
+  font-size: 28px;
   line-height: 2;
   font-weight: normal;
+  text-align: left;
+}
+
+.profile-pic {
+  border-radius: 50%;
+
 }
 
 .project-description {
@@ -538,6 +556,7 @@ input:checked + .slider:before {
 .dark h3,
 .dark h4,
 .dark h5,
+.dark .hero-subtitle,
 .dark .text-center,
 .dark .intro,
 .dark .contact-text,
