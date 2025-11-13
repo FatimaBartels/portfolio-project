@@ -63,6 +63,18 @@ p.app-description,
   opacity: 0.8;
 }
 
+.cv {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+}
+
+.cv:hover {
+  padding: 10px 20px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
 /*Links underline style */
 a {
   display: inline-block;
@@ -148,12 +160,13 @@ span.language-used {
   box-shadow: -4px -1px 9px 2px rgba(222, 248, 248, 0.467);
 }
 
+
 .app-row {
   transition: all 150ms ease-in-out;
 }
 
 .app-row:hover {
-  padding: 25px;
+  padding: 5px;
   border-radius: 5px;
   background-color: var(--branding-color);
 }
@@ -236,7 +249,7 @@ span.language-used {
   }
 
   .icon {
-    width: 15%;
+    width: 55%;
     justify-content: center;
   }
 
@@ -248,7 +261,7 @@ span.language-used {
     justify-content: center;
   }
 
-  .footer-section .social-media-section {
+  .footer-section .social-media-section .skills-section {
     justify-content: center;
   }
 
@@ -435,7 +448,7 @@ footer {
   padding-top: 20px;
 }
 
-.social-media-section {
+.skills-section, .social-media-section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -451,6 +464,7 @@ footer {
 .social-media-icon a:hover {
   opacity: 0.7;
 }
+
 
 .footer-text {
   display: flex;
