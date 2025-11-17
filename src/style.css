@@ -137,7 +137,6 @@ a span:hover {
 
 .profile-pic {
   border-radius: 50%;
-
 }
 
 .project-description {
@@ -159,7 +158,6 @@ span.language-used {
   padding: 4px;
   box-shadow: -4px -1px 9px 2px rgba(222, 248, 248, 0.467);
 }
-
 
 .app-row {
   transition: all 150ms ease-in-out;
@@ -448,7 +446,8 @@ footer {
   padding-top: 20px;
 }
 
-.skills-section, .social-media-section {
+.skills-section,
+.social-media-section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -464,7 +463,6 @@ footer {
 .social-media-icon a:hover {
   opacity: 0.7;
 }
-
 
 .footer-text {
   display: flex;
