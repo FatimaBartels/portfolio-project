@@ -7,7 +7,7 @@
       name="description"
       content="Fatima Bartels is a front-end developer based in Europe, Check out her portfolio's and projects! For business inquiries contact Fatima Bartels. "
     />
-    <title>Front-end developer Portfolio - Fatima Bartels</title>
+    <title>FatimaBartels Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images/site-favicon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -15,6 +15,8 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,8 +47,8 @@
           ></label>
           <li><a href="/" title="Homepage">Home</a></li>
           <li><a href="#about" title="About Fatima Bartels">About</a></li>
-          <li><a href="/work.html" title="Fatima Bartels Projects">Projects</a></li>
-          <li><a href="/contact.html" title="Contact Fatima">Contact</a></li>
+          <li><a href="#project-block" title="Fatima Bartels Projects">Projects</a></li>
+          <li><a href="#connect" title="Contact Fatima">Contact</a></li>
           <li> <label class="switch"><input type="checkbox" /><span class="slider round"></span>
     </label></li>
         </ul>
@@ -168,102 +170,174 @@
             </div>
         </div>  
      
-      </div>
+      </div><!-- End about me  -->
        
- 
-   
+    <!-- Start project block  -->
 
-
-
-    <!-- End about me  -->
-
-      <div class="container">
+      <div class="container" id="project-block">
       <div class="page-title d-lg-block">
         <p class="mb-5">My Projects.</p>
       </div>
       <p class="text-center m-5">Check out my selected project I've worked on.</p>
     </div>
     
-    
+     <!-- Slick slides  -->
     <div class="content-section container">
+      <div class="content-slick">
+         <!-- slide 1  -->
+        <div class="project-slide">
+          <img
+            src="images/react-weather-app.png"
+            class="img-fluid app-img rounded-2" alt="React Weather app photo"/>
+            <h3 class="project-description">React Weather App</h3>
+            <p class="app-description mb-4 ">
+              A React-based weather application that fetches real-time weather data from an API, displaying current conditions, forecasts, and location-specific details. The app features a user-friendly interface and responsive design for accessibility on various devices.
+            </p>
+            <p><span class="language-used">HTML & CSS</span><span class="language-used">React JavaScript</span><span class="language-used">API</span></p>
+            <a href="https://fb-weather-app-react.netlify.app/" target="_blank" class="mt-2 mb-5" title="View Live Weather App"
+              >View React Weather App
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+          <!-- slide 2  -->
+
+          <div class="project-slide">
+          <img
+            src="images/sidekick-ai.png"
+            class="img-fluid app-img rounded-2" alt="AI Recipe App photo"
+          />
+            <h3 class="project-description">AI Recipe App</h3>
+            <p class="app-description mb-4 ">
+              A creative recipe generator powered by AI that provides delicious side dish ideas for BBQs. Users can generate unique and tasty options, making meal planning fun and interactive.
+               The is built for culinary enthusiasts looking to enhance their BBQ experience.
+            </p>
+            <p class="app-description mb-5 ">*Used a FREE API and AI, response might take some time.</p>
+            <p><span class="language-used">HTML & CSS</span><span class="language-used">JavaScript</span><span class="language-used">API</span><span class="language-used">AI</span></p>
+            <a href="https://ai-bbq-side-dish-recipes-generator.netlify.app/" target="_blank" class="mt-2 mb-5" title="View Live AI Recipe App"
+              >View AI Recipe App
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+             <!-- slide 3  -->
+
+          <div class="project-slide">
+         <img
+            src="images/worldclock-app.png"
+            class="img-fluid app-img rounded-2" alt="World Clock App photo"
+          />
+            <h3 class="project-description">World Clock App</h3>
+            <p class="app-description mb-4 ">
+              A world clock application developed with JavaScript, allowing users to check the time across different time zones. The app features a clean, minimalist design and ensures accurate time display for a global audience.
+            </p>
+           <p><span class="language-used">HTML & CSS</span><span class="language-used">JavaScript</span><span class="language-used">API</span></p>
+            <a href="https://js-world-clock-fbartels.netlify.app/" target="_blank" class="mt-2 mb-5" title="View Live World Clock App"
+              >View World Clock App
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+                  <!-- slide 4  -->
+            <div class="project-slide">
+            <img
+            src="images/weather-js-app.png"
+            class="img-fluid app-img rounded-2" alt="Weather app photo"
+          />
+            <h3 class="project-description">Vanilla JS Weather App</h3>
+            <p class="app-description mb-4 ">
+              Vanilla JavaScript weather app with API integration and responsive design. This app presents current weather conditions, provides a five day forecasts, and location-based details, making it an intuitive tool for checking weather updates on various devices.
+            </p>
+               <p><span class="language-used">HTML & CSS</span><span class="language-used">JavaScript</span><span class="language-used">Free API</span></p>
+            <a href="https://fatimabartels-weatherapp.netlify.app/" target="_blank" class="mt-2 mb-5" title="View Live Weather App"
+              >View Weather App
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+                  <!-- slide 5  -->
+
+          <div class="project-slide">
+           <img
+            src="images/dictionary-react.png"
+            class="img-fluid app-img rounded-2" alt="Dictionary app photo"
+          />
+            <h3 class="project-description">React Dictionary</h3>
+            <p class="app-description mb-4 ">
+              A responsive dictionary application built using React, allowing users to search for word definitions and view related information. The app integrates with an external API to provide real-time results and ensures a smooth user experience with an intuitive design.
+            </p>
+            <p><span class="language-used">HTML & CSS</span><span class="language-used">React JavaScript</span><span class="language-used">API</span></p>
+            <a href="https://fb-react-dictionary-app.netlify.app/" target="_blank" class="mt-2 mb-5" title="View Live World Clock App"
+              >View Dictionary
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+                <!-- slide 6  -->
+
+          <div class="project-slide">
+           <img
+            src="images/coron-pala.png"
+            class="img-fluid app-img rounded-2" alt="Coron page photo"
+          />
+            <h3 class="project-description">Landing page</h3>
+            <p class="app-description mb-4 ">
+              Landing page about Coron Palawan, one of the best island in the Philippines. I created this page as part of a project for SheCodes Responsive to develop my coding skills.
+            </p>
+             <p><span class="language-used">HTML & CSS</span><span class="language-used">Grid</span></p>
+            <a href="https://discover-coron.netlify.app/" target="_blank" class="mt-2 mb-5" title="View Landing page"
+              >View Landing page
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+                     
+          </div> 
+        </div>
+   <!-- slide 6  -->
+
+      <!-- Contact info  -->
+
+        <div class="container" id="connect">
+      <div class="page-title d-lg-block d-none">
+        <p>Contact Me.</p>
+      </div>
+    </div>
+
+        <div class="content-section container">
       <div class="content">
-       
-        <div class="row m-5">
-          <div class="col-md-6 app-row mb-3">
-            <h3 class="text-center m-3">Vanilla JS Weather App</h3>
-            <img
-              src="images/weather-js-app.png"
-              alt="Vanilla JS weather project"
-              class="app-pic-hp img-fluid rounded mb-3"
-            />  
-           <a href="/work.html#weather-app" class=" mt-2 mb-5" title="About Weather App"
-        >See More Details
-      </a>
-          </div>
-          <div class="col-md-6 app-row">
-             <h3 class="text-center m-3">World Clock App</h3>
-            <img
-              src="images/worldclock-app.png"
-              alt="Moment JS World Clock project"
-              class="app-pic-hp img-fluid rounded mb-3"
-            />
-           
-              <a href="/work.html#world-clock" class="mt-2 mb-5" title="About World Clock App"
-        >See More Details
-      </a>
-          </div>
-         
+        <div class="row">
+           <div class="col-lg-6 ">
+             <h1 class="intro-title ">Let's get in touch!</h1>
+             <p class="contact-text mt-4">Connect with me via social media or/en email.</p>
+        
         </div>
-        <div class="row m-5">
-         <div class="col-md-6 app-row mb-3">
-            <h3 class="text-center m-3">AI Recipe App</h3>
-            <img
-              src="images/ai-recipe-app.png" 
-              alt="AI Recipe Generator App"
-              class="app-pic-hp img-fluid rounded mb-3" 
-            />
-               <a href="/work.html#ai-recipe" class=" mt-2 mb-5" title="About 
-               AI Recipe App"
-        >See More Details
-      </a>
-          </div>
-            <div class="col-md-6 app-row">
-             <h3 class="text-center m-3">React Weather App</h3>
-            <img
-              src="images/react-weather-app.png"
-              alt="React Weather App"
-              class="app-pic-hp img-fluid rounded mb-3"
-            />
-           
-              <a href="/work.html#react-weather" class="mt-2 mb-5" title="About React Weather app"
-        >See More Details
-      </a>
-          </div>
-        </div>
-            <div class="row m-5">
-          <div class="col-md-6 app-row mb-3">
-            <h3 class="text-center m-3">React Dictionary App</h3>
-            <img
-              src="images/dictionary-app.png"
-              alt="React Dictionary App"
-              class="app-pic-hp img-fluid rounded mb-3"
-            />  
-           <a href="/work.html#react-dictionary" class=" mt-2 mb-5" title="About Weather App"
-        >See More Details
-      </a>
-          </div>
-       
-         
-        </div>
-    </div>
-    <div class="link-to-page container ">
-        <a href="/work.html" class="link-proj mt-2 mb-5" title="Fatima Bartels Projects"
-        >Let's Continue To My Project
-        <span><i class="fa-solid fa-arrow-right-long"></i></span
+        <div class="contact-details col-lg-6 mb-2">
+        
+        <h3 class="social mt-2"><i class="fa-solid fa-envelope"></i><span> Email</span>  </h3>
+        <p>
+          <a href="mailto:bartels.fatima@gmai.com" title="Email Fatima Bartels">bartels.fatima@gmail.com</a>
+        </p>
+        <h3 class="social"><i class="fa-brands fa-linkedin"></i><span> LinkedIn </span></h3>
+        <p>
+          <a href="https://www.linkedin.com/in/fatimabartels/" target="_blank" title="LinkedIn Profile Fatima Bartels"
+            >Fatima Bartels
+          </a>
+        </p>
+        <h3 class="social"><i class="fa-brands fa-square-instagram"></i><span> Instagram </span>  </h3>
+        <p>
+          <a href="https://www.instagram.com/codewithmamita" target="_blank" title="Instagram account Fatima Bartels"
+            >codewithmamita</a
+          >
+        </p>  
+         <div class="link-to-page">
+      <a href="/" class="mt-5 mb-5" title="Back to Homepage"
+        >Go Back Home <span><i class="fa-solid fa-arrow-right-long"></i></span
       ></a>
+      </div>
+    
+    </div> 
      
+      </div>
     </div>
+    
     </div>
+    
+       <!-- Footer -->
     <footer>
     <div class="footer-section container">
         <div class="row">
@@ -287,5 +361,44 @@
     </div>
     <script src="src/index.js">
     </script>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  $(function () {
+    $('.content-slick').slick({
+      dots: true,
+      arrows: true,
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            dots: true,
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            dots: true,
+            arrows: false,
+            centerMode: false,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+</script>
   </body>
 </html>

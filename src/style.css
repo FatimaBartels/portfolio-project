@@ -139,8 +139,10 @@ a span:hover {
   border-radius: 50%;
 }
 
+
 .project-description {
-  padding: 120px 60px;
+  text-align: center;
+  padding: 20px;
 }
 
 span.language-used {
@@ -178,11 +180,11 @@ span.language-used {
 }
 
 .contact-details {
-  padding: 80px;
+  padding: 20px;
 }
 
 .contact-text {
-  margin-top: 80px;
+  margin-top: 5px;
   font-size: 22px;
   color: var(--secondary-color);
 }
@@ -625,4 +627,30 @@ input:checked + .slider:before {
     background: var(--dark-second-color);
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
   }
+}
+
+/*slick 
+.content-slick .slick-prev { left: -30px; }
+.content-slick .slick-next { right: -30px; }
+
+.content-slick .slick-prev:before,
+.content-slick .slick-next:before {
+  color: #111;
+  font-size: 30px;
+}*/
+
+
+.content-slick .slick-slide {
+  padding: 0 12px;
+}
+
+.content-slick .slick-prev { left: -30px; }
+.content-slick .slick-next { right: -30px; }
+ 
+
+
+.content-slick .slick-prev:before,
+.content-slick .slick-next:before {
+  color: #111;
+   font-size: 30px;
 }
