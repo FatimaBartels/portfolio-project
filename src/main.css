@@ -1,8 +1,8 @@
 :root {
   --branding-color: rgb(239, 248, 248);
+  --light-background-color: #f0f8ff;
   --primary-color: #5eead4;
   --secondary-color: #193756;
-  --light: #f0f8ff;
   --dark-theme-color: #030e1b;
   --dark-second-color: #08172a;
   --dark-font-color: #f0f8ff;
@@ -13,7 +13,6 @@
 
 body {
   font-family: var(--default-font-family);
-  background-color: var(--dark-theme-color);
 }
 
 h1,
@@ -24,7 +23,7 @@ h5,
 h6 {
   font-family: var(--heading-font-family);
   font-weight: bold;
-  color: var(--branding-color);
+  color: var(--secondary-color);
 }
 
 .hero h1 {
@@ -36,7 +35,7 @@ h6 {
   font-size: 30px;
   text-align: left;
   line-height: 1.5;
-  color: var(--branding-color);
+  color: var(--secondary-color);
 }
 
 .hero-paragraph {
@@ -48,7 +47,6 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-   color: var(--branding-color);
 }
 
 .workwithme {
@@ -56,7 +54,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: var(--branding-color);
+  color: var(--secondary-color);
 }
 
 p.app-description,
@@ -117,13 +115,13 @@ a span:hover {
 /*underline style ends here*/
 
 .hero {
-  background: var(--dark-second-color);
+  background: var(--branding-color);
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero .intro {
-  color: var(--branding-color);
+  color: var(--secondary-color);
   font-size: 28px;
   text-align: left;
   font-family: var(--default-font-family);
@@ -142,10 +140,10 @@ a span:hover {
   border-radius: 50%;
 }
 
+
 .project-description {
   text-align: center;
   padding: 20px;
-  color: var(--branding-color);
 }
 
 span.language-used {
@@ -154,15 +152,14 @@ span.language-used {
   font-size: 13px;
   margin: 3px;
   font-weight: 500;
-  background-color: var(--dark-second-color);
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   opacity: 0.9;
 }
 
 .app-pic-hp {
   padding: 4px;
-  box-shadow: -4px -1px 9px 2px rgba(76, 83, 83, 0.336);
-  
+  box-shadow: -4px -1px 9px 2px rgba(222, 248, 248, 0.467);
 }
 
 .app-row {
@@ -172,11 +169,7 @@ span.language-used {
 .app-row:hover {
   padding: 5px;
   border-radius: 5px;
-  background-color: var(--dark-second-color);
-}
-
-p.text-muted {
-  color: var(--branding-color);
+  background-color: var(--branding-color);
 }
 
 .weblogo {
@@ -194,7 +187,7 @@ p.text-muted {
 .contact-text {
   margin-top: 5px;
   font-size: 22px;
-  color: var(--branding-color);
+  color: var(--secondary-color);
 }
 
 /*RESPONSIVE FOR TAB & MOBILE VIEW*/
@@ -334,7 +327,7 @@ nav {
   position: sticky;
   z-index: 99;
   width: 100%;
-  background-color: var(--dark-second-color);
+  background: var(--branding-color);
 }
 
 nav .wrapper {
@@ -349,7 +342,7 @@ nav .wrapper {
 }
 
 .wrapper .logo a {
-  color: var(--branding-color);
+  color: var(--secondary-color);
   font-size: 28px;
   font-weight: 500;
   text-decoration: none;
@@ -364,7 +357,7 @@ nav .wrapper {
 }
 
 .nav-links li a {
-  color: var(--branding-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -401,7 +394,7 @@ nav .wrapper {
     max-width: 250px;
     top: 0;
     left: -100%;
-    background: var(--dark-second-color);
+    background: var(--branding-color);
     display: block;
     padding: 50px 10px;
     line-height: 35px;
@@ -439,7 +432,6 @@ nav .wrapper {
     display: inline-flex;
     font-size: 16px;
     text-align: center;
-    color: var(--branding-color);
   }
 }
 nav input {
@@ -449,7 +441,7 @@ nav input {
 /*navigation ends here*/
 
 footer {
-  background-color: var(--dark-second-color);
+  background-color: var(--branding-color);
   margin-top: 80px;
 }
 
@@ -478,7 +470,7 @@ footer {
 .footer-text {
   display: flex;
   justify-content: end;
-  color: var(--branding-color);
+  color: var(--secondary-color);
   font-size: 14px;
   margin-top: 10px;
   opacity: 0.9;
@@ -563,105 +555,100 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/*slick */
-
-.content-slick .slick-slide {
-  padding: 0 12px;
-}
-
-.content-slick .slick-prev {
-  left: -30px;
-}
-.content-slick .slick-next {
-  right: -30px;
-}
-
-.content-slick .slick-prev:before,
-.content-slick .slick-next:before {
- color: var(--branding-color);
-  font-size: 30px;
-}
-
-
-/*light THEME*/
-.light {
-  background: var(--light-color);
+/*DARK THEME*/
+.dark {
+  background: var(--dark-theme-color);
   color: var(--branding-color);
 }
-.light .hero {
-  background: var(--branding-color);
-  color: var(--secondary-color);
+.dark .hero {
+  background: var(--dark-second-color);
+  color: var(--branding-color);
 }
 
-.light a,
-.light h1,
-.light h2,
-.light h3,
-.light h4,
-.light h5,
-.light .hero-subtitle,
-.light .text-center,
-.light .intro,
-.light p,
-.light .contact-text,
-.light .fa-brands,
-.light .fa-solid,
-.light .text-muted span,
-.light .footer-text {
-  color: var(--secondary-color);
+.dark a,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark .hero-subtitle,
+.dark .text-center,
+.dark .intro,
+.dark .contact-text,
+.dark .fa-brands,
+.dark .fa-solid,
+.dark .text-muted span,
+.dark .footer-text {
+  color: var(--branding-color);
 }
 
-.light .app-row:hover {
+.dark .app-row:hover {
   background-color: var(--dark-second-color);
 }
 
-.light .app-pic-hp,
-.light .app-img {
- box-shadow: -4px -1px 9px 2px rgba(222, 248, 248, 0.467);
+.dark .app-pic-hp,
+.dark .app-img {
+  box-shadow: -4px -1px 9px 2px rgba(76, 83, 83, 0.336);
 }
 
-.light span.language-used {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+.dark span.language-used {
+  background-color: var(--dark-second-color);
+  color: var(--primary-color);
   opacity: none;
 }
 
-.light p.text-muted {
-  color: var(--secondary-color);
+.dark p.text-muted {
+  color: var(--branding-color);
 }
 
-.light .wrapper .btn {
+.dark .wrapper .btn {
   color: var(--primary-color);
 }
 
-.light footer,
-.light nav {
-  background-color: var(--branding-color);
-  color: var(--secondary-color);
+.dark footer,
+.dark nav {
+  background-color: var(--dark-second-color);
+  color: var(--branding-color);
 }
 
-.light .nav-links li a {
-  color: var(--secondary-color);
+.dark .nav-links li a {
+  color: var(--branding-color);
 }
 
-.light .slider {
+.dark .slider {
   height: 20px;
   transition: all 200ms ease-in-out;
 }
-.light .slider:hover {
+.dark .slider:hover {
   background: rgb(152, 179, 179);
 }
 
-.light .content-slick .slick-prev:before,
-.light .content-slick .slick-next:before {
-  color: var(--secondary-color);
-  font-size: 30px;
+@media screen and (max-width: 970px) {
+  .dark .wrapper .nav-links {
+    background: var(--dark-second-color);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+  }
 }
 
+/*light
 @media screen and (max-width: 970px) {
   .light .wrapper .nav-links {
     background: var(--branding-color);
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
   }
+}*/
+
+/*slick slide project */
+
+.content-slick .slick-slide {
+  padding: 0 12px;
 }
 
+.content-slick .slick-prev { left: -30px; }
+.content-slick .slick-next { right: -30px; }
+ 
+.content-slick .slick-prev:before,
+.content-slick .slick-next:before {
+  color: #111;
+   font-size: 30px;
+}

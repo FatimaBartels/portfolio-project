@@ -9,10 +9,10 @@ window.onscroll = () => (topBtn.style.opacity = window.scrollY > 500 ? 1 : 0);
 
 function changeTheme() {
   let body = document.querySelector("body");
-  if (body.classList.contains("dark")) {
-    body.classList.remove("dark");
+  if (body.classList.contains("light")) {
+    body.classList.remove("light");
   } else {
-    body.classList.add("dark");
+    body.classList.add("light");
   }
 }
 let themeButton = document.querySelector(".slider");
