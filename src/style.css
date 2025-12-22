@@ -198,6 +198,33 @@ p.text-muted {
   color: var(--branding-color);
 }
 
+.skills-icon {
+  font-size: 15px;
+  padding: 10px ;
+  color: var(--branding-color);
+}
+
+.skills-section i.fa-brands {
+  font-size: 55px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.skills-section i.fa-solid {
+  font-size: 55px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.skills-section li {
+   text-align: center;
+}
+
+p.skills-title {
+  opacity: 0.8;
+
+}
+
 /*RESPONSIVE FOR TAB & MOBILE VIEW*/
 
 @media (max-width: 960px) {
@@ -366,6 +393,25 @@ p.about-me {
     text-align: center;
     padding-bottom: 20px;
   }
+
+  .skills-icon {
+  font-size: 13px;
+  padding: 10px ;
+  color: var(--branding-color);
+}
+
+.skills-section i.fa-brands {
+  font-size: 40px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.skills-section i.fa-solid {
+  font-size: 40px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
   .link-to-page {
     text-align: center;
   }
@@ -752,6 +798,11 @@ input:checked + .slider:before {
 .light .slider:hover {
   background: rgb(152, 179, 179);
 }
+
+.light .skills-icon {
+  color: var(--secondary-color);
+}
+
 
 .light .content-slick .slick-prev:before,
 .light .content-slick .slick-next:before {
