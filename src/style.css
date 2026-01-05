@@ -191,6 +191,13 @@ p.text-muted {
   padding: 20px;
 }
 
+.project-text {
+  margin-top: 5px;
+  font-size: 22px;
+  color: var(--branding-color);
+}
+
+
 .contact-text {
   margin-top: 5px;
   font-size: 22px;
@@ -418,6 +425,12 @@ p.skills-title {
     font-size: 16px;
     text-align: center;
   }
+
+  .project-text {
+  margin-top: 5px;
+  font-size: 16px;
+ 
+}
 
   .contact-details {
     padding: 0;
@@ -768,6 +781,17 @@ input:checked + .slider:before {
   font-style: italic;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 /*light THEME*/
@@ -843,11 +867,6 @@ input:checked + .slider:before {
   color: var(--secondary-color);
 }
 
-.light .content-slick .slick-prev:before,
-.light .content-slick .slick-next:before {
-  color: var(--secondary-color);
-  font-size: 30px;
-}
 
 @media screen and (max-width: 970px) {
   .light .wrapper .nav-links {

@@ -83,3 +83,23 @@ document.querySelectorAll(".read-more-btn").forEach((btn) => {
     btn.textContent = isExpanded ? "Read more" : "Read less";
   });
 });
+
+/* =========================
+   Scroll reveal
+========================= */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+revealElements.forEach((el) => observer.observe(el));
