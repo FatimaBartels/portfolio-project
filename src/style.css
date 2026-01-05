@@ -322,8 +322,10 @@ p.skills-title {
     line-height: 1.7;
   }
 
-  h1.intro-title {
+  h2.intro-title {
     padding-top: 28px;
+    font-size: 26px ;
+    text-align: center;
   }
 
   h2.title-text {
@@ -336,24 +338,24 @@ p.skills-title {
     text-align: center;
   }
 
-  .project-slide h3 {
+  .project-card h3 {
     padding: 15px 0;
   }
 
-  .project-slide p {
+  .project-card p {
     font-size: 14px;
     text-align: center;
     line-height: 1.7;
   }
 
-  .project-slide a {
+  .project-card a {
     font-size: 14px;
     justify-content: center;
   }
 
-  .project-slide span {
+  /*.project-card span {
     font-size: 12px;
-  }
+  }*/
 
   .link-to-page {
     font-size: 14px;
@@ -400,10 +402,14 @@ p.skills-title {
     color: var(--branding-color);
   }
 
+  .skills-section{
+    align-items: center;
+    justify-content: center;
+  }
   .skills-section i.fa-brands {
     font-size: 40px;
     padding-bottom: 25px;
-    text-align: center;
+  
   }
 
   .skills-section i.fa-solid {
@@ -445,6 +451,7 @@ p.skills-title {
     text-align: center;
   }
 }
+
 /*RESPONSIVE ends here*/
 
 .app-img {
@@ -479,6 +486,7 @@ div.page-title p {
   font-size: 18px;
   font-weight: 500;
 }
+
 
 /*NAVIGATION*/
 
@@ -539,6 +547,7 @@ nav .wrapper {
   right: 30px;
   top: 10px;
 }
+
 
 /*Navigation Responsive*/
 @media screen and (max-width: 970px) {
@@ -781,6 +790,43 @@ input:checked + .slider:before {
   font-style: italic;
 }
 
+/* Card with smooth transition */
+.project-card {
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateY(0);
+  opacity: 1;
+  max-height: 1000px; 
+  overflow: hidden;
+}
+
+/* Hidden state - slides up smoothly */
+.project-card.hidden {
+  transform: translateY(-40px);
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* Container to prevent layout shift */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  min-height: 400px; /* Adjust based on your content */
+}
+
+/* Optional:*/
+.projects-grid {
+  transition: grid-template-rows 0.3s ease;
+}
+
+/*Sections transition*/
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -813,12 +859,17 @@ input:checked + .slider:before {
 .light .hero-subtitle,
 .light .text-center,
 .light .intro,
+.light .tab,
 .light p,
 .light .contact-text,
 .light .fa-brands,
 .light .fa-solid,
 .light .text-muted span,
 .light .footer-text {
+  color: var(--secondary-color);
+}
+
+.light .read-more-btn {
   color: var(--secondary-color);
 }
 

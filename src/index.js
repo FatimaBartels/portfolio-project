@@ -48,8 +48,9 @@ themeButton.addEventListener("click", changeTheme);
 /* =========================
    Project TABS
 ========================= */
+
 const tabs = document.querySelectorAll(".tab");
-const cards =  document.querySelectorAll(".project-card");
+const cards = document.querySelectorAll(".project-card");
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
@@ -59,12 +60,17 @@ tabs.forEach((tab) => {
     const filter = tab.dataset.filter;
 
     cards.forEach((card) => {
-      const match =
-      filter === "all" || card.dataset.category === filter;
-      card.style.display = match ? "block" : "none";
+      const match = filter === "all" || card.dataset.category === filter;
+
+      if (match) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
     });
   });
 });
+
 
 /* =========================
    Read more / less toggle
@@ -103,3 +109,4 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach((el) => observer.observe(el));
+
