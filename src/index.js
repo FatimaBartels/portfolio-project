@@ -65,3 +65,21 @@ tabs.forEach((tab) => {
     });
   });
 });
+
+/* =========================
+   Read more / less toggle
+========================= */
+
+document.querySelectorAll(".read-more-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const wrapper = btn.closest(".app-description");
+    const shortText = wrapper.querySelector(".short-text");
+    const fullText = wrapper.querySelector(".full-text");
+
+    const isExpanded = fullText.style.display === "inline";
+
+    shortText.style.display = isExpanded ? "inline" : "none";
+    fullText.style.display = isExpanded ? "none" : "inline";
+    btn.textContent = isExpanded ? "Read more" : "Read less";
+  });
+});

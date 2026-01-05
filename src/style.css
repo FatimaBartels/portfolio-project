@@ -743,6 +743,32 @@ input:checked + .slider:before {
   }
 }
 
+.full-text {
+  display: none;
+}
+
+.read-more-btn {
+  all: unset;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.api-note {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+
 
 /*light THEME*/
 .light {
