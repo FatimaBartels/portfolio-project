@@ -183,12 +183,21 @@
       </div>
       <p class="text-center m-5">Check out my selected project I've worked on.</p>
     </div>
+    <div class="project-tabs text-center mb-4">
+      <button class="tab active" data-filter="all">Show all</button>
+      <button class="tab" data-filter="frontend">Frontend</button>
+      <button class="tab" data-filter="backend">Backend</button>
+      
+    </div>
+
+
     
      <!-- Slick slides  -->
     <div class="content-section container">
-      <div class="content-slick">
-         <!-- slide 1  
-        <div class="project-slide">
+      <div class="projects-grid">
+
+         <!-- slide 1  -->
+        <article class="project-card" data-category="frontend" >
           <img
             src="images/react-weather-app.png"
             class="img-fluid app-img rounded-2" alt="React Weather app photo"/>
@@ -201,11 +210,11 @@
               >View React Weather App
               <span><i class="fa-solid fa-arrow-right-long"></i></span
             ></a></p>
-          </div>-->
+        </article>
 
           <!-- slide 2  -->
 
-          <div class="project-slide">
+          <article class="project-card" data-category="frontend">
           <img
             src="images/sidekick-ai.png"
             class="img-fluid app-img rounded-2" alt="AI Recipe App photo"
@@ -221,10 +230,10 @@
               >View AI Recipe App
               <span><i class="fa-solid fa-arrow-right-long"></i></span
             ></a>
-          </div>
+          </article>
              <!-- slide 3  -->
 
-          <div class="project-slide">
+          <article class="project-card" data-category="frontend">
          <img
             src="images/worldclock-app.png"
             class="img-fluid app-img rounded-2" alt="World Clock App photo"
@@ -238,9 +247,10 @@
               >View World Clock App
               <span><i class="fa-solid fa-arrow-right-long"></i></span
             ></a>
-          </div>
+          </article>
+
                   <!-- slide 4  -->
-            <div class="project-slide">
+          <article class="project-card" data-category="frontend">
             <img
             src="images/weather-js-app.png"
             class="img-fluid app-img rounded-2" alt="Weather app photo"
@@ -254,10 +264,10 @@
               >View Weather App
               <span><i class="fa-solid fa-arrow-right-long"></i></span
             ></a>
-          </div>
-                  <!-- slide 5  -->
+          </article>
 
-          <div class="project-slide">
+                  <!-- slide 5  -->
+          <article class="project-card" data-category="frontend">
            <img
             src="images/dictionary-react.png"
             class="img-fluid app-img rounded-2" alt="Dictionary app photo"
@@ -271,10 +281,10 @@
               >View Dictionary
               <span><i class="fa-solid fa-arrow-right-long"></i></span
             ></a>
-          </div>
-                <!-- slide 6  -->
+          </article>
 
-          <div class="project-slide">
+                <!-- slide 6  -->
+          <article class="project-card" data-category="frontend">
            <img
             src="images/coron-pala.png"
             class="img-fluid app-img rounded-2" alt="Coron page photo"
@@ -288,11 +298,17 @@
               >View Landing page
               <span><i class="fa-solid fa-arrow-right-long"></i></span
             ></a>
-          </div>
-                     
+          </article>
+
+                  <!-- slide 7  -->
+        <article class="project-card" data-category="backend" >
+           
+        </article>     
           </div> 
         </div>
-   <!-- slide 6  -->
+
+         
+   <!-- project cards ends here  -->
 
       <!-- Contact info  -->
 
