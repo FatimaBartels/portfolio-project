@@ -17,3 +17,30 @@ function changeTheme() {
 }
 let themeButton = document.querySelector(".slider");
 themeButton.addEventListener("click", changeTheme);
+
+
+/* =========================
+   Typewriter (Hero subtitle)
+========================= */
+
+(function (){
+ const el = document.getElementById("typewriter");
+ if (!el) return;
+
+ const text = "Junior Frontend / Full-stack developer";
+ const speed = 80; 
+ let i = 0;
+
+ function type() {
+   if (i < text.length) {
+     el.textContent = text.slice(0, i) + "|";
+     i++;
+     setTimeout(type, speed);
+   }else {
+    el.textContent = text;
+   }
+ }
+
+ type();
+
+})();
