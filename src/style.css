@@ -187,6 +187,12 @@ p.text-muted {
   max-width: 100%;
 }
 
+.tech-icon {
+  display: block;
+  margin: auto;
+  width: 50px;
+}
+
 .contact-details {
   padding: 20px;
 }
@@ -390,14 +396,16 @@ p.skills-title {
 
   .skills-icon {
     text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .skills-icon {
-    font-size: 13px;
+    padding-bottom: 15px;
+    font-size: 11px;
     padding: 10px;
     color: var(--branding-color);
   }
+
+  .tech-icon {
+  width: 30px;
+}
+ 
 
   .skills-section{
     align-items: center;
