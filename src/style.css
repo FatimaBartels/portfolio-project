@@ -153,7 +153,7 @@ span.language-used {
   padding: 10px 15px;
   border-radius: 50px;
   font-size: 13px;
-  margin: 3px;
+  margin: 20px 3px;
   font-weight: 500;
   background-color: var(--dark-second-color);
   color: var(--primary-color);
@@ -234,6 +234,10 @@ p.text-muted {
 
 p.skills-title {
   opacity: 0.8;
+}
+
+a.view-link {
+  padding-top: 30px;
 }
 
 /*RESPONSIVE FOR TAB & MOBILE VIEW*/
