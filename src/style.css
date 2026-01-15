@@ -760,6 +760,7 @@ input:checked + .slider:before {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(3, 1fr);
+  
 }
 
 @media (max-width: 1024px) {
@@ -801,12 +802,19 @@ input:checked + .slider:before {
 
 /* Card with smooth transition */
 .project-card {
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transform: translateY(0);
-  opacity: 1;
   max-height: 1000px; 
   overflow: hidden;
+  border-radius: 10px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 30px rgba(72, 82, 95, 0.08);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
 
 /* Hidden state - slides up smoothly */
 .project-card.hidden {
