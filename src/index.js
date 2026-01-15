@@ -1,11 +1,38 @@
-// Get the element - scroll to top
+/* =========================
+   Menu toggle
+========================= */
+const nav = document.querySelector("nav");
+const openBtn = document.getElementById("menu-toggle-open");
+const closeBtn = document.querySelector(".close-btn");
+
+function toggleMenu() {
+  const isOpen = nav.classList.toggle("open");
+  openBtn.setAttribute("aria-expanded", isOpen);
+}
+
+openBtn.addEventListener("click", toggleMenu);
+closeBtn.addEventListener("click", toggleMenu);
+
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    openBtn.setAttribute("aria-expanded", "false");
+  });
+});
+
+
+/* =========================
+  Scroll top
+========================= */
 let topBtn = document.querySelector(".top-btn");
 
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 window.onscroll = () => (topBtn.style.opacity = window.scrollY > 500 ? 1 : 0);
 
-// Dark theme function
+/* =========================
+   Light theme
+========================= */
 
 function changeTheme() {
   let body = document.querySelector("body");
@@ -18,31 +45,29 @@ function changeTheme() {
 let themeButton = document.querySelector(".slider");
 themeButton.addEventListener("click", changeTheme);
 
-
 /* =========================
    Typewriter (Hero subtitle)
 ========================= */
 
-(function (){
- const el = document.getElementById("typewriter");
- if (!el) return;
+(function () {
+  const el = document.getElementById("typewriter");
+  if (!el) return;
 
- const text = "Junior Frontend / Full-stack developer";
- const speed = 80; 
- let i = 0;
+  const text = "Junior Frontend / Full-stack developer";
+  const speed = 80;
+  let i = 0;
 
- function type() {
-   if (i < text.length) {
-     el.textContent = text.slice(0, i) + "|";
-     i++;
-     setTimeout(type, speed);
-   }else {
-    el.textContent = text;
-   }
- }
+  function type() {
+    if (i < text.length) {
+      el.textContent = text.slice(0, i) + "|";
+      i++;
+      setTimeout(type, speed);
+    } else {
+      el.textContent = text;
+    }
+  }
 
- type();
-
+  type();
 })();
 
 /* =========================
@@ -71,7 +96,6 @@ tabs.forEach((tab) => {
   });
 });
 
-
 /* =========================
    Read more / less toggle
 ========================= */
@@ -82,11 +106,13 @@ document.querySelectorAll(".read-more-btn").forEach((btn) => {
     const shortText = wrapper.querySelector(".short-text");
     const fullText = wrapper.querySelector(".full-text");
 
-    const isExpanded = fullText.style.display === "inline";
+    const isExpanded = btn.getAttribute("aria-expanded") === "true";
 
     shortText.style.display = isExpanded ? "inline" : "none";
     fullText.style.display = isExpanded ? "none" : "inline";
+
     btn.textContent = isExpanded ? "Read more" : "Read less";
+    btn.setAttribute("aria-expanded", String(!isExpanded));
   });
 });
 
@@ -109,4 +135,3 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach((el) => observer.observe(el));
-
